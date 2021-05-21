@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Page title</title>
+</head>
+<style>
+				*{
+								margin:0;
+								padding:0;
+								box-sizing: border-box;
+				}
+				#container{
+								/* border:; */
+								width:100%;
+								height:100vh;
+								display:flex;
+								flex-direction:column;
+								justify-content:center;
+								align-items:center;
+								position:relative
+								
+				}
+				
+				#container::before{
+								content:"";
+								position:absolute;
+                                background-image:linear-gradient(155deg,#0cedde 50%,#fff 0%);
+                                width:100%;
+                                top:0;
+left:0;
+right:0;
+bottom:0;
+z-index:-1;
+								
+								
+				}
+				.sele{
+								/* border:2px solid green ; */
+								width:50%;
+							text-align:center;
+							display:flex;
+							justify-content:center;
+							height:60px;
+								
+				}
+				#selector{
+								border:3px double black;
+								text-align:center;
+								font-size:1.2rem;
+								padding:5px 100px;
+								font-weight:400;
+								width:100%;
+								background:transparent;
+								border-radius:100px;
+				}
+				#input{
+								/* border:2px Solid red; */
+								width:80%;
+								height:auto;
+								margin:10px 0px;
+								padding:10px 20px;
+								display:flex;
+								flex-direction:column;
+								box-shadow:0px 0px 20px 0px rgba(0,0,0,0.3);
+								
+				}
+				.input-div{
+				font-size:1.4rem;
+				font-weight:bold;
+				text-transform:capitalize;
+				padding:5px 10px;
+				/* border:2px Solid blue; */
+				
+								
+				}
+				input{
+								border:3px double black;
+								height:40px;
+								width:90%;
+								font-size:1.4rem;								
+								outline:none;
+								padding:0px 5px;
+								background:transparent;
+								border-radius:100px;
+								
+								
+				}
+				::placeholder{
+								font-size:1.4rem;
+								padding:15px 20px;
+								text-transform:capitalize;
+						
+						
+			
+				}
+				
+				.same{
+								border:2px double black;
+								width:50%;
+								display:block;
+								text-transform:uppercase;
+								text-align:center;
+								margin:10px 20px;
+								border-radius:20px;
+								outline:none;
+								padding:5px;
+				}
+				#one{
+							
+								/* display:; */
+							
+							
+								
+				}
+				#two{
+								display:none;
+								
+				}
+				#three{
+								
+								display:none;
+				}
+				#show{
+								border:none;
+				}
+				#btn{
+								border:2px double green;
+								text-align:none;
+				}
+			
+				.div{
+								/* border:2px double red; */
+								margin:5px 10px;
+								padding:5px 15px;
+								display:flex;
+								flex-direction:column;
+								
+				}
+			
+						.btn-div{
+										/* border:2px Solid black; */
+										display:flex;
+										justify-content:center;
+										margin-bottom:20px;
+						}
+						#btn{
+										border:3px double black;
+										height:40px;
+										width:30%;
+										font-size:1.4rem;
+										border-radius:50px;
+										background:transparent;
+										
+										
+						}
+						.result{
+										border:3px double black;
+										text-align:center;
+										font-size:1.4rem;
+										display:flex;
+										justify-content:center;
+										height:50px;
+										align-items:center;
+						}
+						.para{
+										font-size:1.4rem;
+										border:2px Solid green;
+										text-transform:uppercase;
+										
+						}
+						#rarea{
+										/* border:2px solid black ; */
+										font-size:1.4rem;
+										margin:0px 5px;
+									
+										text-transform:capitalize;
+										
+						}
+						
+						.show-div{
+										/* border:2px solid black ; */
+										width:80%;
+										Text-align:center;
+										margin-bottom:20px;
+						}
+						.show-div p{
+										font-size:2rem;
+										text-transform:uppercase;
+						}
+						
+				@media(max-width:760px){
+								body{
+											
+								}
+								
+								#container{
+												/* borde2px solid black; */
+												width:100%;
+												height:100vh;
+								}
+								.sele{
+												/* borde2px solid blue; */
+												width:100%;
+												height:70px;
+								}
+							#selector{
+												/* borde2px solid blue; */
+												width:80%;
+												font-size:1rem;
+												text-align:start;
+												padding:5px;
+												font-weight:bold;
+								}
+								
+								#input{
+												/* borde2px solid black ; */
+												width:80%;
+												height:auto;
+												margin:
+											
+								}
+								
+							#input	.div{
+												/* borderpx Solid green; */
+											
+												height:70px;
+												margin:2px;
+												padding:5px 10px;
+								}
+								.input-div{
+												/* borde2px solid black ; */
+												font-size:1rem;
+												margin:2px 5px ;
+												padding:2px 5px;
+								}
+						
+				
+								input{
+												/* bord2px solid black; */
+												height:30px;
+												font-size:1rem;
+												border-radius:100px;
+								}
+								::placeholder{
+												font-size:0.9rem;
+												padding:0px 5px;
+								}
+								.btn-div{
+												/* borde2px solid black ; */
+								}
+								#btn{
+												border:2px double black;
+												font-size:1rem;
+												height:35px;
+												width:70%;
+								}
+								.result{
+				border:2px double black ;
+				width:100%;
+			
+								}
+								#rarea{
+												border:2p double black;
+												font-size:1.2rem;
+								}
+								 #show{
+								 				border:2px;
+								 				font-size:1.5rem;
+								 }
+								.show-div{
+												/* borderpx solid black ; */
+												margin:5px;
+												/* background; */
+												position:relative;
+												border-radius:50px;
+												
+								} 
+						.show-div::before{
+										content:"";
+								position:absolute;
+          background-image:linear-gradient(128deg,#fff 50%,#0cedde 50%);
+width:100%;
+top:0;
+left:0;
+right:0;
+bottom:0;
+z-index:-1;
+border-radius:50px;
+										
+										
+										
+						}		
+								.show-div p{
+												/* font-weight; */
+												font-size:1.4rem;
+												color:black;
+											
+								}
+						}
+										
+					
+		
+</style>
+<body>
+				<div id="container" >
+			<div class="show-div">
+					<p id="show1"> hello..guys</p>		
+			</div>					
+				<div class="sele">
+				<select id="selector" onchange="select()" class="same">
+						<option for="selectone" active>(select-one)</option>		
+						<option for="cir">circle</option>		
+					<option for="squ">square</option>
+				<option for="rec">rectangle</option>
+			<option for="tra">triangle</option>
+<option for="parall">parallelogram</option>
+<option for="prisum">rectangular prism</option>
+<option for="cone">cone</option>
+<option for="cylinder">cylinder</option>
+<option for="trape">trapezoid</option>
+<option for="rho">rhombus</option>
+<option for="cude">cube</option>
+</select>
+</div>
+
+
+<div id="input">
+		<div id="one" class="div">
+			<div class="input-div" id="texta">enter value:</div>
+						<input type="number" id="text1" placeholder="enter first vlaue">
+		</div>		
+		
+			<div id="two" class="div">
+			<div class="input-div" id="textb">enter value:</div>
+						<input type="number" id="text2" placeholder="enter second vlaue">
+		</div>		
+		
+		<div id="three" class="div">
+						
+		<div class="input-div" id="textc">enter value:</div>		
+						<input type="number" id="text3" placeholder="enter third vlaue">
+		</div>		
+		
+		<div class="btn-div">
+		<button class="same btn1" id="btn" onclick="change()" >click me</button>
+		
+		<button class="same btn1" id="btn" onclick="reload()" >clear</button>
+		</div>
+		
+		<div class="result">
+						<span id="rarea"></span>
+	<p id="show" class="para"></p>
+	</div>
+	
+	
+	</div>
+		
+		</div>
+		
+		
+		<script defer>
+let disa=document.getElementById('one');
+		disa.style.display="none";
+						
+			function select() {
+	//alert("hello")
+	let a=+document.getElementById('text1').value;
+	
+	
+let b=+document.getElementById('text2').value;
+let disb=document.getElementById('two');
+let disc=document.getElementById('three');
+
+let disa=document.getElementById('one');
+	
+let x=document.getElementById('selector').selectedIndex;
+	let y=document.getElementById('selector').options;
+	let z=y[x].value;
+	//console.log(z);
+	let textchang=document.getElementById('texta');
+	let textchangb=document.getElementById('textb');
+let textchangc=document.getElementById('textc');
+	
+	//textchang.innerHTML=z;
+	disa.style.display="none";
+	switch(z)
+	{
+	
+	        case "(select-one)":
+	        //alert("hello")
+	     rarea.innerHTML="plz select value from selector"
+	     disa.style.display="none";
+	     disb.style.display="none";
+	     disc.style.display="none";
+	     
+	     
+	     break;
+	
+	
+	
+	        
+					case "circle":
+					//alert("hello")
+				textchang.innerHTML="enter radius of circle:"	
+				disb.style.display="none";
+				disc.style.display="none";
+				disa.style.display="block";
+				
+				
+				
+					break;
+					
+					case "square":
+					//alert("hello")
+		textchang.innerHTML="enter side's of square:"	
+		disb.style.display="none";
+		disc.style.display="none";
+		disa.style.display="block";
+		     break;
+		     
+		     case "rectangle":
+		     //alert("hello")
+		  textchang.innerHTML="enter value of length:"	;
+		  textchangb.innerHTML="enter value of breath:"
+		  disb.style.display="block";
+		  disc.style.display="none";
+		  disa.style.display="block";
+		  break;
+		  
+		  case "triangle":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of base:"	;
+		  textchangb.innerHTML="enter value of height:"
+		  disb.style.display="block";
+		  disc.style.display="none";
+		  disa.style.display="block";
+		  break;
+		  
+		  
+		  case "parallelogram":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of base:"	;
+		  textchangb.innerHTML="enter value of height:"
+		  disb.style.display="block";
+		  disc.style.display="none";
+		  disa.style.display="block";
+		  break;
+		  
+		  case "rectangular prism":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of length:"	;
+		  textchangb.innerHTML="enter value of width:";
+		  textchangc.innerHTML="enter value of height:"
+		  disb.style.display="block";
+		  disc.style.display="block";
+		  disa.style.display="block";
+		  break;
+		  
+		  case "cone":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of radius:"	;
+		  textchangb.innerHTML="enter value of height:";
+		  disb.style.display="block";
+		  disc.style.display="none";
+		  disa.style.display="block";
+		  break;
+		  
+		  
+		  case "cylinder":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of radius:"	;
+		  textchangb.innerHTML="enter value of height:";
+		  disb.style.display="block";
+		  disc.style.display="none";
+		  disa.style.display="block";
+		  break;
+		  
+		  case "trapezoid":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of base:"	;
+		  textchangb.innerHTML="enter value of base:";
+		  textchangc.innerHTML="enter value of height:"
+		  disb.style.display="block";
+		  disc.style.display="block";
+		  disa.style.display="block";
+		  break;
+		  
+		  case "rhombus":
+		  //alert("hello")
+		  textchang.innerHTML="enter value of diagonal:"	;
+		  textchangb.innerHTML="enter value of diagonal:";
+		  disb.style.display="block";
+		  disc.style.display="none";
+		  disa.style.display="block";
+		  break;
+		  
+		  case "cube":
+					//alert("hello");
+				textchang.innerHTML="enter value of edge:"	
+				disb.style.display="none";
+				disc.style.display="none";
+				disa.style.display="block";
+					break;
+					
+					
+	}
+		
+	
+			
+							
+	}			;
+			
+			
+			/* *********select functio ***** */
+							
+	
+						
+						
+						
+	function change() {
+	
+	
+	
+	let a=+document.getElementById('text1').value;
+		
+		
+	
+	let b=+document.getElementById('text2').value;	
+
+
+let c=+document.getElementById('text3').value;	
+let rarea=document.getElementById('rarea');
+let dis=rarea.innerHTML
+
+
+let disa=document.getElementById('one');
+
+
+	
+	
+	let show1=document.getElementById('show');
+	
+let result, pi=3.14;
+
+	let x=document.getElementById('selector').selectedIndex;
+	let y=document.getElementById('selector').options;
+	let z=y[x].value;
+	//console.log(z)
+	
+	switch(z)
+	{
+	      case "(select-one)":
+	      
+	      rarea.innerHTML="plz select value from selector"
+	      break;
+	
+
+					case "circle":
+					
+					
+					if(a=="") {
+									alert("plz enter Radius of circle.. ")
+									
+					}else {
+						
+								result=pi*a*a;
+								show1.innerHTML=result.toFixed(3);
+					rarea.innerHTML="area is:";
+						
+											
+					
+							
+							
+						
+									
+					}
+					
+					break;
+					
+					case "square":
+					if(a=="") {
+									alert("plz enter side of square.. ")
+									
+					}else {
+								
+						result=a*a;
+							let squ=show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+							
+								}
+								break;
+
+
+					
+					case "rectangle":
+					if(a=="" && b=="") {
+									alert("plz enter length and breath of rectangle.. ")
+									
+					}
+				else if( b=="")	
+				{
+								alert("plz enter breath of rectangle..")
+				}
+				
+				else if(a=="")	
+				{
+								alert("plz enter length of rectangle..")
+				}
+					
+					else {
+								
+							result=a*b;
+							let squ=show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+								};
+					break;
+					
+					
+					//triangle
+					case "triangle":
+					if(a=="" && b=="") {
+									alert("plz enter base and height of triangle.. ")
+									
+					}
+					else if(b=="")	
+				{
+								alert("plz enter height of triangle ..")
+				}
+				
+				else if(a=="")	
+				{
+								alert("plz enter base of triangle..")
+				}
+					
+					
+					
+					else {
+								
+							result=1*(a*b)/2;
+							let squ=show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+								}
+					break;
+					
+					//parallelogram 
+					case "parallelogram":
+					if(a=="" && b=="") {
+									alert("plz enter base and height of parallelogram.. ")
+									
+					}
+					else if(b=="")	
+				{
+								alert("plz enter height of parallelogram..")
+				}
+				
+				else if(a=="")	
+				{
+								alert("plz enter base of parallelogram..")
+				}
+					
+	else {
+								
+							result=(a*b);
+							let squ=show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+								}
+					break;
+					
+					case "rectangular prism":
+					
+					if(a=="" && b=="" && c=="") 
+					{
+									alert("plz enter length,width and height of rectangular prism.. ")
+									
+					}
+					else if(b=="" && c=="" && a!="")
+					{
+									alert("plz enter width and height of rectangular prism")
+					}
+					else if(c=="" && a!="" && b!="")
+					{
+									alert("plz enter  height of rectangular prism")
+					}
+					
+					else if(b=="" && c!="" && a!="")
+					{
+									alert("plz enter width of rectangular prism")
+					}
+					
+					else if(b!="" && c!="" && a=="")
+					{
+									alert("plz enter length of rectangular prism")
+					}
+					
+					
+					else if(c=="" && a=="" && b!="")
+					{
+									alert("plz enter length and height of rectangular prism")
+					}
+					else if(c!=="" && a=="" && b=="")
+					{
+									alert("plz enter length and width of rectangular prism")
+					}
+					 
+					
+	else {
+								
+							result=2*(a*b+b*c+c*a);
+						show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+								}
+					break;
+					
+					//cone
+					case "cone":
+					if(a=="" && b=="") {
+									alert("plz enter radius and height of cone.. ")
+									
+					}
+					else if(b=="")	
+				{
+								alert("plz enter height of cone..")
+				}
+				
+				else if(a=="")	
+				{
+								alert("plz enter radius of cone..")
+				}
+					
+					
+					
+					else {
+								
+							result=(pi*a)*(a+Math.sqrt(b*b+a*a));
+							let squ=show1.innerHTML=result.toFixed(3);
+							rarea.innerHTML="area is ≈";
+								}
+					break;
+					
+					
+					case "cylinder":
+					if(a=="" && b=="") {
+									alert("plz enter radius and height of cylinder.. ")
+									
+					}
+					else if(b=="")	
+				{
+								alert("plz enter height of cylinder..")
+				}
+				
+				else if(a=="")	
+				{
+								alert("plz enter radius of cylinder..")
+				}
+					
+					
+					
+					else {
+								
+	result=(2*pi*a*b)+(2*pi*a*a);
+	
+show1.innerHTML=result.toFixed(3);
+							rarea.innerHTML="area is ≈";
+								}
+					break;
+					
+					
+					case "trapezoid":
+					
+					if(a=="" && b=="" && c=="") 
+					{
+									alert("plz enter  first base, second base and height of trapezoid.. ")
+									
+					}
+					 
+					else if(b=="" && c=="" && a!="")
+					{
+									alert("plz enter base and height of trapezoid ")
+					}
+					else if(c=="" && a!="" && b!="")
+					{
+									alert("plz enter height of trapezoid ")
+					}
+					
+					else if(b=="" && c!="" && a!="")
+					{
+									alert("plz enter base of trapezoid")
+					}
+					
+					else if(b!="" && c!="" && a=="")
+					{
+									alert("plz enter base of trapezoid")
+					}
+					
+					
+					else if(c=="" && a=="" && b!="")
+					{
+									alert("plz enter base and height of trapezoid ")
+					}
+					else if(c!=="" && a=="" && b=="")
+					{
+									alert("plz enter first base and second base of trapezoid")
+					}
+					 
+					 
+					 
+					 
+					
+	else {
+								
+							result=((a+b)*c)/2;
+						show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+								}
+					break;
+					
+					
+					case "rhombus":
+					if(a=="" && b=="") {
+									alert("plz enter first diagonal and second diagonal of rhombus.. ")
+									
+					}
+					else if(b=="")	
+				{
+								alert("plz enter second diagonal of rhombus..")
+				}
+				
+				else if(a=="")	
+				{
+								alert("plz enter first diagonal of rhombus..")
+				}
+					
+					
+					
+					else {
+								
+	result=(a*b)/2;
+	
+show1.innerHTML=result.toFixed(3);
+							rarea.innerHTML="area is :";
+								}
+					break;
+					
+					case "cube":
+					if(a=="") {
+									alert("plz enter edge of cube.. ")
+									
+					}else {
+								
+								result=6*(a*a);
+								show1.innerHTML=result;
+							rarea.innerHTML="area is:";
+							}
+							
+					
+					
+					
+					
+					
+	}
+	
+	
+	
+	
+	
+	
+}
+
+function reload () {
+				location.reload();
+}
+ let show=document.getElementById('show1');
+
+setTimeout(()=>{
+				show.innerHTML="you can find area"
+			
+},2000)
+
+				
+						
+						
+						
+		</script>
+		
+				
+</body>
+</html>
